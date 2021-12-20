@@ -1,0 +1,288 @@
+/*====== Variables ======*/
+:root {
+  --gold: #99844a;
+  --darkgold: #846f2c;
+  font-family: "Bebas Neue";
+}
+
+/*====== Basics ======*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+}
+
+/*====== MAIN ======*/
+
+.title-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/DSC_0042.jpg");
+  min-height: 550px;
+  background-position: 70% 95%;
+  background-size: 1500px 800px;
+  background-repeat: no-repeat;
+}
+
+.break-line::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.all-info {
+  color: white;
+  padding: 200px 25px 0;
+  text-align: center;
+}
+
+.all-info h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.all-info p {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/*====== COVERS ======*/
+.cover-section {
+  background-color: white;
+  padding: 0 25px;
+}
+
+.standard-title-white {
+  color: #232323;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin: 60px 30px;
+}
+.first-underline-title {
+  border-bottom: 5px var(--gold) solid;
+}
+
+.cover-list {
+  list-style: none;
+}
+
+.cover-list li::before {
+  content: "\f058";
+  font-family: FontAwesome;
+  display: inline-block;
+  color: var(--gold);
+  margin-right: 5px;
+}
+
+.cover-list li {
+  margin: 25px 0;
+  color: #232323;
+  font-size: 20px;
+}
+
+/*====== DIRECTOR ======*/
+
+.directors-section {
+  background-color: #232323;
+}
+
+.standard-title-black {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin: 60px 30px;
+  padding-top: 50px;
+}
+.all-directors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.director {
+  margin: 15px 5%;
+  color: white;
+  text-align: center;
+
+}
+
+.director img {
+  align-self: center;
+
+  width: 100%;
+}
+
+.director p {
+  font-size: 17px;
+  
+}
+
+/*====== DELEGATES ======*/
+.all-delegates {
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+
+.delegate {
+  width: 100%;
+  margin: 20px 5%;
+  color: #232323;
+  text-align: center;
+}
+
+.delegate img {
+  align-self: center;
+  width: 50%;
+}
+
+.delegate p {
+  font-size: 22px;
+}
+
+@media (min-width: 481px) {
+  .first-underline-title {
+    border-bottom: none;
+  }
+  .second-underline-title {
+    border-bottom: 5px var(--gold) solid;
+  }
+  .break-line::after {
+    content: "";
+  }
+  .standard-title {
+    font-size: 45px;
+  }
+
+  .all-info {
+    padding: 300px 25px 0;
+  }
+
+  /*====== COVERS ======*/
+  .cover-list li {
+    font-size: 22px;
+  }
+  /*====== DIRECTORS ======*/
+  .director img{
+    width: 70%;
+  }
+
+  .director p{
+    font-size: 18px;
+  }
+
+  /*====== DELEGATES ======*/
+
+  .delegate img{
+    width: 30%;
+  }
+  .delegate p{
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 640px){
+  /*====== DELEGATES ======*/
+
+  .all-delegates{
+    justify-content: space-evenly;
+  }
+  .delegate{
+    width: 40%;
+  }
+
+  .delegate img{
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .title-section {
+    background-size: 100% ;
+    background-position: 0% 60%;
+  }
+  .all-info {
+    padding-top: 300px;
+  }
+  .all-info h1 {
+    font-size: 70px;
+  }
+  .all-info p {
+    font-size: 25px;
+  }
+
+  .cover-list {
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cover-list li {
+    font-size: 22px;
+    width: 45%;
+  }
+
+  /*====== DIRECTORS ======*/
+
+  .all-directors{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .director{
+    margin: 0 10px;
+    width: 20%;
+  }
+
+  .director p{
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  /*====== DELEGATES ======*/
+
+  .all-delegates{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .delegate{
+    width: 15%;
+    margin: 0;
+  }
+  .del-img {
+    align-self: center;
+    min-height: 175px;
+  }
+  .del-img img{
+    width: 100%;
+  }
+  .accpre{
+    display: block;
+    margin: auto;
+    
+    width: 50%;
+  }
+  
+}
+@media (min-width: 1025px){
+  .del-img {
+    align-self: center;
+    min-height: 275px;
+  }
+  .del-img img{
+    width: 80%;
+  }
+}

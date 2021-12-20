@@ -1,0 +1,152 @@
+/*====== Variables ======*/
+:root{
+--gold: #99844A;
+--darkgold: #846F2C;
+font-family: 'Bebas Neue';
+}
+
+/*====== Basics ======*/
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html,body{
+overflow-x: hidden;
+}
+
+body{
+    background-color: #232323;
+}
+
+/*====== MAIN ======*/
+
+.title-section{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),url('/images/DSC_1063.jpg');
+    background-size: 130%;
+    background-position: 35% 55%;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .standard-title{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    align-self: flex-end;
+    margin-bottom: 25px;
+  }
+  .underline-title{
+    border-bottom: 5px var(--gold) solid;
+  }
+
+  .all-news{
+      padding: 15px;
+  }
+  .news{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      color: white;
+      border-bottom: 2px var(--gold) solid;
+      margin-top: 15px;
+  }
+
+  .newspaper{
+      width: 100%;
+  }
+
+  .news-container{
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+  }
+  .news-info{
+    width: 100%;
+    font-size: 18px;
+    padding-right: 20px;
+  }
+
+  .news-info h3{
+    font-weight: bold;
+    margin: 7px 0;
+  }
+  .news-desc{
+      display: none;
+  }
+
+  .news-date{
+      margin-bottom: 15px;
+  }
+
+  .news-img{
+      width: 30%;
+  }
+  .news-img img{
+    margin: 7px 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+@media (min-width: 769px){
+    .title-section{
+        min-height: 300px;
+        background-position: 35% 45%;
+
+    }
+
+    .news{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 350px;
+    }
+
+    .news-container{
+        max-height: 350px;
+    }
+    .newspaper{
+        font-size: 26px;
+    }
+
+    .news-desc{
+        display: inline-block;
+        font-weight: normal;
+        font-size: 18px;
+    }
+    .news-img img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1025px){
+    .title-section{
+        /* min-height: 350px; */
+        background-position: 35% 52%;
+    }
+
+    .newspaper{
+        font-size: 26px;
+    }
+
+    .news-info h4{
+        font-size: 21px;
+    }
+    .news-desc{
+        display: inline-block;
+        font-weight: normal;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Head -->
+    <%- include('partials/head', {title}) %>    
+</head>
+<body>
+    <!-- Header -->
+    <%- include('partials/header') %>
+    <section class="main-section">
+        <div class="main-image">
+        </div>
+        <div class="main-info">
+            <div class="contact-info">
+                <h1 class="standard-title">CON<span class="underline-title">TAC</span>TO</h1>
+                <p class="message">Escribenos un mensaje</p>
+                <form action="" class="contact-form">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" id="lastName">
+                    <label for="email">Correo</label>
+                    <input type="text" id="email">
+                    <label for="msg">Mensaje</label>
+                    <textarea name="" id="msg" cols="20" rows="4"></textarea>
+                    <button type="submit" class="send-button">Enviar mensaje</button>
+                </form>
+            </div>
+            <div class="business">
+                
+                <div class="business-info">
+                    <i class="fas fa-phone"></i>
+                    <p class="business-name">Número</p>
+                    <p>800 200 0202</p>
+                </div>
+                <div class="business-info">
+                    <i class="fas fa-envelope"></i>
+                    <p class="business-name">Correo</p>
+                    <p>blindajemedico@hotmail.com</p>
+                </div>
+                <div class="business-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="business-name">Direccion</p>
+                    <p>Av. Armando Birlain Shaffler 2001, Centro Sur, <br>Corporativo 2, piso 5, Int A, C.P. 76090</p>
+                </div>
+            </div>    
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+</body>
+
+</html>

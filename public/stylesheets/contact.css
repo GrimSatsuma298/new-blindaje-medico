@@ -1,0 +1,214 @@
+/*====== Variables ======*/
+:root {
+  --gold: #99844a;
+  --darkgold: #846f2c;
+  font-family: "Bebas Neue";
+}
+
+/*====== Basics ======*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #232323;
+}
+
+/*====== MAIN ======*/
+
+.main-section {
+  margin-top: 130px;
+  width: 100%;
+}
+
+.main-image {
+  width: 100%;
+  min-height: 591px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/DSC_0064.jpg);
+  background-repeat: no-repeat;
+  background-position: 105% 125%;
+  background-size: 150% 680px;
+  position: absolute;
+  left: -100px;
+  z-index: -1;
+}
+
+.standard-title {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+}
+
+.underline-title {
+  border-bottom: 5px var(--gold) solid;
+}
+
+.message {
+  margin-top: 35px;
+  text-align: left;
+}
+
+.contact-info {
+  margin-left: auto;
+
+  color: white;
+  padding: 0 15px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+label {
+  margin: 15px 0;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+}
+
+input,
+textarea {
+  color: white;
+  font-size: 17px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid var(--gold);
+}
+
+.send-button {
+  width: 75%;
+  height: 50px;
+  margin: 25px 0;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  margin-left: auto;
+  transition: all 1s;
+}
+
+.send-button:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}
+
+.business {
+  display: flex;
+  color: white;
+  font-size: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.business-info {
+  margin: 15px 0;
+}
+
+.business i {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 481px) {
+  .main-image {
+    background-size: 100% 680px;
+  }
+}
+@media (min-width: 640px) {
+  .main-image {
+    background-size: 75% 715px;
+    left: -195px;
+  }
+  .message{
+      font-size: 25px;
+  }
+
+  form label{
+      font-size: 20px;
+  }
+}
+@media (min-width: 769px) {
+  .main-section {
+    margin-top: 200px;
+  }
+  .main-image {
+    left: -2px;
+    width: 67%;
+    min-height: 780px;
+    background-size: 100% 860px;
+  }
+
+  .main-info {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+  }
+
+  .contact-info {
+    width: 50%;
+  }
+
+  .business {
+    width: 50%;
+    order: -1;
+    justify-content: flex-end;
+    text-align: left;
+  }
+
+  .business-name {
+    display: none;
+  }
+
+  .business-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .business-info p {
+    margin-left: 15px;
+  }
+
+  .message{
+    font-size: 28px;
+}
+
+form label{
+    font-size: 24px;
+}
+.standard-title{
+    font-size: 45px;
+}
+}
+
+@media (min-width: 1025px){
+    .main-image {
+        left: -2px;
+        width: 50%;
+        min-height: 780px;
+        background-size: 100% 860px;
+      }
+}

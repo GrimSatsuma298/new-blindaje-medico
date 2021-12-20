@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  Head -->
+<%- include('partials/head', {title}) %>
+<body>
+    <!-- Header -->
+    <%- include('partials/header') %>
+    <!-- TITLE SECTION -->
+    <section class="title-section">
+        <h1 class="standard-title">NO<span class="underline-title">TIC</span>IAS</h1>
+    </section>
+    <section class="all-news">
+        <% allNews.forEach (news => { %>
+            <a href="<%= news.link %>" target="_blank">
+                <div class="news">
+                    <div class="news-container">
+                        <p class="newspaper"><%= news.newspaper %></p>
+                        <div class="news-info">
+                            <h3><%= news.title %></h4>
+                            <p class="news-desc"><%= news.description %></p>
+                            <p class="news-date"><%= news.date %></p>
+                        </div>
+                    </div>
+                    <div class="news-img">
+                        <img src="/images/news/<%= news.img %>" alt="">
+                    </div>
+                </div>
+            </a>
+        <% }) %>
+        
+    </section>
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+</body>
+
+</html>

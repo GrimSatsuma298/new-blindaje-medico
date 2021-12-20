@@ -1,0 +1,302 @@
+/*====== Variables ======*/
+:root{
+  --gold: #99844A;
+  --darkgold: #846F2C;
+  font-family: 'Bebas Neue';
+}
+
+/*====== Basics ======*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
+
+/*====== MAIN ======*/
+
+
+.title-section{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+  ),url('/images/DSC_0013.jpg');
+  min-height: 600px;
+  background-position: 80% ;
+  background-size: 1000px 700px;
+  background-repeat: no-repeat;
+  
+}
+
+.break-line::after{
+  content: "\a";
+  white-space: pre;
+}
+
+.all-info{
+  color: white;
+  padding-top: 200px;
+  padding-right: 25px;
+  text-align: right;
+}
+
+.all-info h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.all-info p {
+  font-weight: normal;
+}
+
+.btn-more-info{
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border-radius: 30px;
+  background-color: var(--gold);
+ outline: none;
+ border:none;
+}
+
+
+/*====== SERVICES ======*/
+
+.standard-title{
+  /* font-weight: bold; */
+  font-size: 40px;
+  text-align: center;
+  margin: 60px 30px;
+}
+.underline-title{
+  border-bottom: 5px var(--gold) solid;
+}
+
+.all-services{
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  justify-content: space-evenly;
+  /* min-height: 1700px; */
+}
+
+.service{
+  display: flex;
+  width: 70%;
+  margin: 25px 0;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.service-description{
+  width: 70%;
+  font-size: 25px;
+  align-self: center;
+  font-weight: 100;
+}
+.service-logo{
+  position: relative;
+  width: 25%;
+  font-size: 50px;
+  color: var(--gold);
+  text-align: center;
+}
+
+.fa-tv, .fa-file-signature{
+  font-size: 50px;
+}
+
+/*====== COUNTER ======*/
+
+.counter-section{
+  margin-top: 60px;
+  min-height: 400px;
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) ),url(/images/DSC_0146.jpg);
+  background-position: 20% 40%;
+  background-size: 200% 600px;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+}
+
+.top-text, .bottom-text{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.flip-clock{
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flip-number{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 70px;
+  background-color: white;
+  width: 18%;
+  text-align: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 30px 30px 20px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  text-decoration-line: line-through;
+  text-decoration-color: white;
+  text-decoration-thickness: 3px;
+  
+}
+
+/*====== NEWS ======*/
+.news-section{
+  min-height: 400px;
+}
+
+iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  min-height: 200px;
+  width: 80%;
+}
+.testimony{
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news-section h2{
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.news-section p {
+  font-weight: normal;
+}
+
+.testimony{
+  padding: 10px;
+}
+
+@media (min-width: 481px) {
+
+
+.standard-title{
+  font-size: 45px;
+}
+.service-description{
+  font-size: 30px;
+}
+
+.top-text, .bottom-text{
+  font-size: 26px;
+}
+
+
+  iframe{
+    width: 500px;
+    height: 450px;
+  }
+
+
+  .flip-number{
+    width: 17%;
+    font-size: 120px;
+    min-height: 150px;
+  }
+
+
+  .testimony{
+    width: 450px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 769px){
+  .title-section{
+    background-size: 100%;
+  }
+  .break-line::after{
+    content: "";
+  }
+
+  .all-info{
+    padding-top: 300px;
+  }
+
+  .all-info h1{
+    font-size: 70px;
+  }
+  .all-info p {
+    font-size: 25px;
+  }
+
+  .btn-more-info{
+    width: 200px;
+    height: 50px;
+    font-size: 21px;
+  }
+
+  /*====== SERVICES ======*/
+
+  .all-services{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .service{
+    width: 40%;
+  }
+
+  .service-description{
+    font-size: 35px;
+  }
+
+  .service-logo{
+    font-size: 65px;
+  }
+
+  /*====== COUNTER ======*/
+  .counter-section{
+    min-height: 700px;
+    background-size: 110% 900px;
+    background-position: 50% 50%;
+    padding-top: 140px;
+  }
+
+  .top-text{
+    font-size: 35px;
+  }
+
+  .bottom-text{
+    font-size: 45px;
+  }
+  .flip-clock{
+    width: 100%;
+    min-height: 200px;
+  }
+  .flip-number{
+    width: 13%;
+    font-size: 160px;
+  }
+
+  /*====== NEWS ======*/
+
+
+  iframe{
+    width: 800px;
+    height: 500px;
+  }
+  .testimony{
+    width: 800px;
+    font-size: 25px;
+  }
+
+}

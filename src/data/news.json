@@ -1,0 +1,26 @@
+[
+    {
+        "newspaper": "El Sol de Acapulco",
+        "title" : "Piden no criminalizar acto médico de la doctora Brito",
+        "description" : "La defensa jurídica de la anestesióloga enfatizó que el medicamento por el que la acusan nunca llegó a sus manos",
+        "img": "SolAcapulco-drBrito.jpg",
+        "date": "22 / 07 / 21",
+        "link": "https://www.elsoldeacapulco.com.mx/local/piden-no-criminalizar-acto-medico-de-la-doctora-brito-salud-guerrero-autoridades-medicos-abogados-6875650.html"
+    },
+    {
+        "newspaper": "Excelsior",
+        "title" : "Médico recibe ayuda legal; atendió a un exdiputado que luego murió",
+        "description" : "La hija del político chiapaneco lo acusa de abuso de autoridad; Antonio Juárez, de la Sociedad Civil Blindaje Médico Jurídico",
+        "img": "Excelsior-comunicado.jpg",
+        "date": "08 / 07 / 20",
+        "link": "https://www.excelsior.com.mx/nacional/medico-recibe-ayuda-legal-atendio-a-un-exdiputado-que-luego-murio/1396403"
+    },
+    {
+        "newspaper": "Al Momento",
+        "title" : "Blindaje y dignidad médica; un derecho del médico colombiano: BMJ",
+        "description" : "Antonio Juárez, Director General de Juárez y Asociados Blindaje Médico Jurídico S.C, Prestigiada firma mexicana Especializada en defender los derechos y dignidad del Gremio de la Salud en México",
+        "img": "AlMomento-doctores.jpg",
+        "date": "22 / 08 / 18",
+        "link": "https://almomento.mx/blindaje-y-dignidad-medica-un-derecho-del-medico-colombiano-bmj/"
+    }
+]
