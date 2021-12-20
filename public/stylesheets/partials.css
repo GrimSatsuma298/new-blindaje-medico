@@ -15,8 +15,24 @@
 }
 
 .left-header{
-    width: 70%;
+    width: 40%;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+  width: 100%;
+}
+
+.image-link{
+  width: 40%;
+}
+
+.actual-date{
+  width: 60%;
+    align-self: center;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 .right-header{
@@ -78,9 +94,7 @@
 }
 
 
-.logo{
-    width: 25%;
-}
+
 
 
 .btn-toggle-bar{
@@ -98,12 +112,7 @@ a{
   text-decoration: none;
 }
 
-.actual-date{
-  width: 55%;
-    align-self: center;
-    font-size: 15px;
-    font-weight: bolder;
-}
+
 
 .social-header{
   display: none;
@@ -147,7 +156,7 @@ a{
 
 @media (min-width: 481px){
   .logo{
-    width: 35%;
+    width: 80%;
   }
   .left-header{
     width: 40%;
@@ -160,6 +169,10 @@ a{
 }
 
 @media (min-width: 640px){
+
+  .logo{
+    width: 60%;
+  }
   .dropdown-content{
     width: 500px;
     left: -500px;
@@ -184,7 +197,7 @@ a{
     width: 16%;
   }
   .logo{
-    width: 60%;
+    width: 80%;
   }
 
   .right-header{
@@ -238,7 +251,7 @@ a{
 
 @media (min-width: 1025px){
   .logo{
-    width: 25%;
+    width: 80%;
   }
 
   .actual-date{
