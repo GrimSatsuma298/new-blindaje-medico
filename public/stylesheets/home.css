@@ -221,7 +221,8 @@ iframe{
 
 @media (min-width: 769px){
   .title-section{
-    background-size: 100%;
+    background-size: 120%;
+    background-position: 0% 0%;
   }
   .break-line::after{
     content: "";
@@ -299,4 +300,16 @@ iframe{
     font-size: 25px;
   }
 
+}
+
+@media(min-width:1025px){
+  .title-section{
+    background-size: 148%;
+    background-position: 57% 50%;
+    min-height: 1000px;
+  }
+
+  .all-info{
+    padding-top: 350px;
+  }
 }

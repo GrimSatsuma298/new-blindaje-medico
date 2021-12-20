@@ -142,12 +142,12 @@ textarea {
     background-size: 75% 715px;
     left: -195px;
   }
-  .message{
-      font-size: 25px;
+  .message {
+    font-size: 25px;
   }
 
-  form label{
-      font-size: 20px;
+  form label {
+    font-size: 20px;
   }
 }
 @media (min-width: 769px) {
@@ -192,23 +192,35 @@ textarea {
     margin-left: 15px;
   }
 
-  .message{
+  .message {
     font-size: 28px;
-}
+  }
 
-form label{
+  form label {
     font-size: 24px;
-}
-.standard-title{
+  }
+  .standard-title {
     font-size: 45px;
-}
+  }
+
+  input,
+  textarea {
+    width: 80%;
+  }
+  form{
+    margin-top: 30px;
+  }
+
+  .send-button{
+    width: 40%;
+  }
 }
 
-@media (min-width: 1025px){
-    .main-image {
-        left: -2px;
-        width: 50%;
-        min-height: 780px;
-        background-size: 100% 860px;
-      }
+@media (min-width: 1025px) {
+  .main-image {
+    left: -2px;
+    width: 50%;
+    min-height: 780px;
+    background-size: 100% 860px;
+  }
 }
