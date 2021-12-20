@@ -279,12 +279,12 @@ body {
 }
 @media (min-width: 1025px){
   .title-section{
-    background-size: 148%;
-    background-position: 30% 50%;
+    background-size: 160%;
+    background-position: 30% 80%;
     min-height: 1000px;
   }
   .all-info{
-    padding-top: 630px;
+    padding-top: 350px;
   }
   .del-img {
     align-self: center;
